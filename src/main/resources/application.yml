@@ -17,6 +17,12 @@ spring:
               enabled: true
               lower-case-service-id: true
 
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/microloja
+
 eureka:
   client:
     service-url:
